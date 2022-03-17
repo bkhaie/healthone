@@ -23,14 +23,15 @@
                     <li class="breadcrumb-item"><a href="/registreren">Registreren</a></li>
                 </ol>
             </nav>
-
-            <h1 class="text-center">Abonnementen</h1><br>
+            <h1 class="text-center">| Members <span class="text-primary">Abonnementen</span> |</h1>
+        <br>
+         
 
             <div class="row">
                 <div class="col-md-10 mx-auto d-block">
 
-                    <p>Op dit moment beschikken wij over 2 abonnementen een jaar- en maandabonnement. Het is op dit moment nog niet mogelijk om via de site een lidmaatschap te kopen.<br>
-                        <br>Voor meer informatie over de prijzen zie de tabel hieronder.
+                    <p>Wat wij u kunnen geven: <br> 2 abonnementen een jaar- en maandabonnement. <br> Op dit moment is het nog niet mogelijk om via de site een lidmaatschap te kopen.<br>
+                        <br>Registratie kosten.
                     </p>
 
                     <?php
@@ -59,21 +60,23 @@
                     <label for="Naam" class="form-label">Naam</label>
                     <input type="text" class="form-control" name="first_name" id="Naam">
                 </div>
+                <br>
                 <div class="mb-6">
                     <label for="Achternaam" class="form-label">Achternaam</label>
                     <input type="text" class="form-control" name="last_name" id="Achternaam">
                 </div>
-
+                <br>
                 <div class="mb-6">
                     <label for="email" class="form-label">Email</label>
                     <input type="email" class="form-control" name="email" id="email">
                 </div>
+                <br>
                 <div class="mb-6">
                     <label for="wachtwoord" class="form-label">Wachtwoord</label>
                     <input type="password" class="form-control" name="wachtwoord" id="wachtwoord">
                 </div>    
 
-
+                <div class="col-md-10 mx-auto d-block">
                 <label>Abbonnement:</label>
                 <div>
                     <select name="abonnement">
@@ -82,7 +85,7 @@
                 </div>
                 
                 <input type="submit" name="register" value="Opslaan" class="btn btn-primary text-right">
-                    
+                  </div>   
             </form>
 
             <br><hr><br>

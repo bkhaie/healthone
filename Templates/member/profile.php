@@ -11,7 +11,8 @@
             include_once ('defaults/pictures.php');
             ?>
 
-            <center><h4>Member Profiel</h4></center>
+            <center><h1 class="text-center">| Member <span class="text-primary">Profiel</span> |</h1>
+        <br></center>
             
             <table class="table align-middle">
                 <thead>

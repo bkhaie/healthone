@@ -20,6 +20,8 @@ include_once('defaults/head.php');
             <li class="breadcrumb-item"><a href="/categories/<?= $_GET['id']?>"><?= $name ?></a></li>
         </ol>
     </nav>
+    <h1 class="text-center">| Sport<span class="text-primary">Producten</span> |</h1>
+        <br>
     <div class="row gy-3 ">
         <?php global $products ,$name?>
         <?php foreach ($products as $product): ?>

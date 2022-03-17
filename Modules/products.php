@@ -1,5 +1,4 @@
 <?php
-// TODO Zorg dat de methodes goed ingevuld worden met de juiste queries.
 function getProducts(int $categoryId)
 {
     global $pdo;
@@ -15,7 +14,6 @@ function getProduct(int $productId)
    $sth = $pdo->prepare('SELECT * FROM product WHERE id=?');
    $sth->bindParam(1, $productId);
    $sth->execute();
-   //$category = $sth->fetch();
    return $sth->fetchAll(PDO::FETCH_CLASS, 'Product')[0];
 }
 

@@ -25,7 +25,8 @@ include_once('defaults/head.php');
             <li class="breadcrumb-item active"><a href="/login">Login</a></li>
         </ol>
     </nav>
-
+    <h1 class="text-center">| Members <span class="text-primary">Login</span> |</h1>
+        <br>
     <form method="post">
     <div class="mb-3">
         <label for="example1" class="form-label">Email</label>

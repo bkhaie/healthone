@@ -17,9 +17,13 @@
                     <li class="breadcrumb-item"><a href="/contact">Contact</a></li>
                 </ol>
             </nav>
-            
-            <h2 class="text-center">Over onze vestiging</h2>
-
+            <h1 class="text-center">| Over <span class="text-primary">Ons</span> |</h1>
+        <br>
+         
+<center>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium itaque atque dignissimos necessitatibus sunt autem iste suscipit eligendi iusto labore! Quaerat voluptates velit ullam eveniet, a explicabo error deleniti enim.</p> 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium itaque atque dignissimos necessitatibus sunt autem iste suscipit eligendi iusto labore! Quaerat voluptates velit ullam eveniet, a explicabo error deleniti enim.</p>
+</center>
             <div class="row">
                 <div class="col-md-10 rounded mx-auto d-block">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -52,15 +56,25 @@
             </div>
 
             <br>
+            <center>
+          
 
+            <br>
+
+            
+           
+            <span>Hieronder vind u de openingstijden van onze sportschool
+                    </span>
             <div class="row">
+                <div class="col-md-12 rounded mx-auto d-block">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4908.209030621044!2d4.256548110628114!3d52.04140936694351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4b8945005086f903!2sMondriaan%20Tinwerf!5e0!3m2!1snl!2snl!4v1647550604313!5m2!1snl!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>                    <br>
+                    <h6 class="text-center">Wij zijn gevestigd op Tinwerf 10, 2544 ED Den Haag  </h6>
+                    <br>
+                </div>
+            </div>  <div class="row">
                 <div class="col-md-10 mx-auto d-block">
 
-                    <p>Zie hieronder de openingstijden en locatie van sportcenter HealthOne. 
-                        <br>- Dit zijn ook de openingstijden van de bar die zich bevindt in sportcenter HealthOne.
-                        <br>- U kunt bij ons gratis parkeren op het parkeerterrein dat we delen met de voetbalvereniging.
-                        <br>- Wij zijn dagelijks volgens de openingstijden bereikbaar via 015 257 89 24.
-                    </p>
+            
 
                     <?php
                         try {
@@ -79,18 +93,6 @@
                             die("Error!: " . $e->getMessage());
                         }
                     ?>                    
-                </div>
-            </div>
-
-            <br>
-            
-            <center>
-            <div class="row">
-                <div class="col-md-12 rounded mx-auto d-block">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1549.7801861794155!2d4.3301513!3d51.9956248!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b44d70e5bf1f%3A0x99611a9d7c4e54e6!2sParkeerplaats%2C%202635%20DJ%20Den%20Hoorn!5e1!3m2!1snl!2snl!4v1635089346182!5m2!1snl!2snl" width="1080" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    <br>
-                    <h6 class="text-center">We zijn gevestigd aan de Zuidhoornseweg 6A 2635 DJ Den Hoorn</h6>
-                    <br>
                 </div>
             </div>
             </center>

@@ -1,5 +1,5 @@
+
 <?php
-    // The class for the category
     class Category{
         public $id;
         public $name;

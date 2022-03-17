@@ -5,29 +5,29 @@ include_once('defaults/head.php');
 ?>
 
 <body>
-<div class="container">
-    <?php
+    <div class="container">
+        <?php
     include_once('defaults/header.php');
     include_once('defaults/menu.php');
     include_once('defaults/pictures.php');
     ?>
 
-    <?php if(!empty($message)): ?>
+        <?php if(!empty($message)): ?>
         <div class="alert alert-success" role="alert">
             <?=$message?>
         </div>
-    <?php endif;?>
+        <?php endif;?>
 
-    <div class="row">
-        <div class="col-md-12">
-            <h3 class="text-center">Welkom 
-                <?php if(isset($_SESSION['user']->first_name)){echo $_SESSION['user']->first_name;}else{echo "";}?>
-                <?php if(isset($_SESSION['user']->last_name)){echo $_SESSION['user']->last_name;}else{echo "";}?>
-            </h3>            
-        </div>            
-    </div>    
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="text-center">Welkom
+                    <?php if(isset($_SESSION['user']->first_name)){echo $_SESSION['user']->first_name;}else{echo "";}?>
+                    <?php if(isset($_SESSION['user']->last_name)){echo $_SESSION['user']->last_name;}else{echo "";}?>
+                </h3>
+            </div>
+        </div>
 
-    <?php
+        <?php
         global $pdo;
 
         $query = $pdo->prepare('SELECT * FROM `user` WHERE email = :email');
@@ -73,38 +73,39 @@ include_once('defaults/head.php');
         }
     ?>
 
-    <form class="row g-3" method="post">
-        <div class="col-md-12">
-            <label for="currentpass" class="form-label">Huidige wachtwoord</label>
-            <input type="password" name="currentPassword" id="currentpass" class="form-control">
-        </div>
-        <div class="col-md-12">
-            <label for="newpass" class="form-label">Nieuwe wachtwoord</label>
-            <input type="password" name="newPassword" id="newpass" class="form-control">
-        </div>
-        <div class="col-md-12">
-            <label for="repeatpass" class="form-label">Herhaal wachtwoord</label>
-            <input type="password" name="repeatPassword" id="repeatpass" class="form-control">
-        </div>
+        <form class="row g-3" method="post">
+            <div class="col-md-12">
+                <label for="currentpass" class="form-label">Huidige wachtwoord</label>
+                <input type="password" name="currentPassword" id="currentpass" class="form-control">
+            </div>
+            <div class="col-md-12">
+                <label for="newpass" class="form-label">Nieuwe wachtwoord</label>
+                <input type="password" name="newPassword" id="newpass" class="form-control">
+            </div>
+            <div class="col-md-12">
+                <label for="repeatpass" class="form-label">Herhaal wachtwoord</label>
+                <input type="password" name="repeatPassword" id="repeatpass" class="form-control">
+            </div>
+
+            <center>
+                <div class="col-12">
+                    <button type="submit" name="wijzig" class="btn btn-danger">Wachtwoord aanpassen</button>
+                </div>
+            </center>
+        </form>
 
         <center>
-            <div class="col-12">
-                <button type="submit" name="wijzig" class="btn btn-danger">Wachtwoord aanpassen</button>
-            </div>
+            <a type="button" class="btn btn-primary btn-sm px-3" href='/member/profile'>
+                Terug naar profiel
+            </a>
         </center>
-    </form>
 
-    <center>
-        <a type="button" class="btn btn-primary btn-sm px-3" href='/member/profile'>
-            Terug naar profiel
-        </a>
-    </center>
-
-    <hr>
-    <?php
+        <hr>
+        <?php
     include_once('defaults/footer.php');
     ?>
-</div>
+    </div>
 
 </body>
+
 </html>

@@ -1,5 +1,4 @@
 <?Php
-    // The class for the user
     class User{
         public $id;
         public $email;

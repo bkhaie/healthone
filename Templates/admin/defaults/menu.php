@@ -14,6 +14,9 @@
                     <a class="nav-link active" href="/admin/home">Home</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link active" href="/member/profile">Profiel</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link active" href="/admin/beheer">Beheer</a>
                 </li>
             </ul>

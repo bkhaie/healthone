@@ -1,5 +1,4 @@
 <?php
-    // This function checks the login
     function checkLogin():string{
         global $pdo;
         $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
@@ -28,13 +27,11 @@
         return 'INCOMPLETE';
     }
 
-    // This function let's the user logout
     function logout(){
         $_SESSION = array();
         session_destroy();
     }
 
-    // This function checks if the user is an admin or not
     function isAdmin() :bool{
         if(isset($_SESSION['user']) && !empty($_SESSION['user'])){
             $user = $_SESSION['user'];
@@ -48,7 +45,6 @@
         return false;
     }
 
-    // This function makes it possible 
     function makeRegistration():string{
         global $pdo;
         $email  = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
@@ -71,7 +67,6 @@
         return "INCOMPLETE";
     }
 
-    // This function checks if the user is an member
     function isMember():bool{
         if(isset($_SESSION['user']) && !empty($_SESSION['user'])){
             $user = $_SESSION['user'];
@@ -84,7 +79,6 @@
         return false;
     }
 
-    // The function which let's you change the profile
     function changeProfile():bool{
         global $pdo;
 

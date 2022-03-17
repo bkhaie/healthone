@@ -1,5 +1,4 @@
 <?php
-    // The class for the review
     class Review {
         public $id;
         public $name;

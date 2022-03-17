@@ -13,13 +13,11 @@ $title = "HealthOne";
 $titleSuffix = "";
 
 switch ($params[1]) {
-    // When sportapparaat is selected on the menu it will be directed to this case 
     case 'categories':
         $titleSuffix = ' | Categories';
             $categories = getCategories();
             include_once "../Templates/categories.php";
         break;
-    // When an category is selected on the page with all the categories it will be directed to this case   
     case 'category':
         $titleSuffix = ' | Categories';
             if(isset($_GET['id'])){
@@ -33,7 +31,6 @@ switch ($params[1]) {
             }
             
         break;
-    // When an product  is selected on the products page it will be directed to this case       
     case 'product':
         
             if(isset($_GET['id'])){
@@ -49,7 +46,6 @@ switch ($params[1]) {
             }
             
         break;
-    // When review button is pressed on the product page it will be directed to this case
     case 'review':
         if(isset($_GET['id'])){
             $productId = $_GET['id'];
@@ -57,11 +53,9 @@ switch ($params[1]) {
             $reviews = getReviews($productId);
             $name = getCategoryName($product->category_id);
             $titleSuffix = ' | ' . $product->name;
-            //close buton
             if(isset($_POST['close'])){
                 header("Location: /product/$productId");
             }
-            //submit form button
             elseif (isset($_POST['name']) && !empty($_POST['name']) && isset($_POST['description']) && !empty($_POST['description'])) {
                 $name = filter_input(INPUT_POST, "name", FILTER_SANITIZE_STRING);
                 
@@ -78,7 +72,6 @@ switch ($params[1]) {
             include_once "../Templates/home.php";
         }
         break;
-    // When login is selected on the menu it will be directed to this case
     case 'login':
         $titleSuffix =' | Login';
         if(isset($_POST['login'])){
@@ -104,26 +97,21 @@ switch ($params[1]) {
             include_once "../Templates/login.php";
         }
         break;
-    //  When logout is selected on the menu it will be directed to this case
     case 'logout':
         $titleSuffix = ' | Home';
         logout();
         header("Location: /home");
         break;
-    // If the user is an admin it will be directed to the admin.php file
     case 'admin':
         include_once "admin.php";
         break;
-    // If the user is an member it will be directed to the member.php file
     case 'member':
         include_once "member.php";
         break;
-    //  When contact is selected on the menu it will be directed to this case
     case 'contact':
         $titleSuffix =' | Contact';
         include_once "../Templates/contact.php";
         break;
-    //  When registreren is selected on the menu it will be directed to this case
     case 'registreren':
         $titleSuffix =' | Registreren';
 

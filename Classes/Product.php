@@ -1,5 +1,4 @@
 <?php
-    // The class for the product
     class Product{
         public $id;
         public $name;

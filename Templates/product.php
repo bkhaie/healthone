@@ -22,6 +22,8 @@ include_once('defaults/head.php');
             <li class="breadcrumb-item active" aria-current="page"><?=$product->name ?></li>
         </ol>
     </nav>
+    <h1 class="text-center">| Sport<span class="text-primary">Product</span> |</h1>
+        <br>
     <div class="row">
         <div class="col-md-12">
             <div class="card">
